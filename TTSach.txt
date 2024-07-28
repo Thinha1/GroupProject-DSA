@@ -1,0 +1,28 @@
+14
+2485#Bo Gia#Mario Puzo#NXB VH#1969#Mafia
+8128#Truyen Kieu#Nguyen Du#NXB VHTT#1820#Van hoc co dien
+4995#Giet con chim nhan#Harper Lee#NXB VHQT#1960#Giat gan
+3565#Nineteen Eighty-Four#George Orwell#NXB VHNN#1949#Vien tuong
+7743#Chien Tranh va Hoa Binh#Leo Tolstoy#NXB VHNN#1869#Lich su
+2957#Tinh yeu thoi tho ta#G.G. Marquez#NXB VHNN#1985#Tinh cam
+3849#Bat tre dong xanh#J.D. Salinger#NXB VHQT#1951#Giao duc
+1106#Kafka ben bo bien#Murakami Haruki#NXB VHQT#2002#Hu cau
+7396#Trai suc vat#George Orwell#NXB VHQT#1945#Chinh tri
+5467#Cuoc phieu luu cua Huck#Mark Twain#NXB VHNN#1885#Phieu luu
+1463#Nhap mon lap trinh#N.T.T.M. Khang#NXB DHQGHCM#2022#Giao duc
+3660#Cay cam ngot cua toi#J. Vasconcelos#NXB HNV#2020#Tu truyen
+2842#Logic Hoc#D.N.T. Nghia#NXB HUIT#2017#Giao duc
+7539#Nhat ky Dang Thuy Tram#Dang Thuy Tram#NXB HNV#2022#Tu truyen
+2790#So Do#Vu Trong Phung#NXB VHTT#1936#Co dien
+7892#Nha gia kim#Paulo Coelho#NXB VHNN#1988#Phieu luu
+5162#Rung Na Uy#Murakami Haruki#NXB VHQT#2006#Tinh cam
+2453#Nguoi dua dieu#Khaled Hosseini#NXB VHNN#2003#Kich
+8512#Suong khoi que nha#Nguyen Nhat Anh#NXB Tre#2014#Tho au
+0698#Ha do#Nguyen Nhat Anh#NXB Tre#1991#Tinh cam
+
+
+
+
+
+
+
