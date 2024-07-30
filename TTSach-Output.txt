@@ -1,27 +1,31 @@
 STT| MA SACH    | TEN SACH                | TAC GIA            | NHA XUAT BAN   | NAM XUAT BAN | THE LOAI       
 
- 1    8128       Truyen Kieu               Nguyen Du            NXB VHTT           1820        van hoc co dien     
+ 1    1          2                         3                    1                  2           1                   
 
- 2    4995       Giet con chim nhan        Harper Lee           NXB VHQT           1960        giat gan            
+ 2    7396       Trai suc vat              George Orwell        NXB VHQT           1945        chinh tri           
 
- 3    3565       Nineteen Eighty-Four      George Orwell        NXB VHNN           1949        vien tuong          
+ 3    1463       Nhap mon lap trinh        N.T.T.M. Khang       NXB DHQGHCM        2022        giao duc            
 
- 4    7743       Chien Tranh va Hoa Binh   Leo Tolstoy          NXB VHNN           1869        lich su             
+ 4    2842       Logic Hoc                 D.N.T. Nghia         NXB HUIT           2017        giao duc            
 
- 5    2957       Tinh yeu thoi tho ta      G.G. Marquez         NXB VHNN           1985        tinh cam            
+ 5    3849       Bat tre dong xanh         J.D. Salinger        NXB VHQT           1951        giao duc            
 
- 6    3849       Bat tre dong xanh         J.D. Salinger        NXB VHQT           1951        giao duc            
+ 6    4995       Giet con chim nhan        Harper Lee           NXB VHQT           1960        giat gan            
 
  7    1106       Kafka ben bo bien         Murakami Haruki      NXB VHQT           2002        hu cau              
 
- 8    7396       Trai suc vat              George Orwell        NXB VHQT           1945        chinh tri           
+ 8    7743       Chien Tranh va Hoa Binh   Leo Tolstoy          NXB VHNN           1869        lich su             
 
- 9    5467       Cuoc phieu luu cua Huck   Mark Twain           NXB VHNN           1885        phieu luu           
+ 9    2485       Bo Gia                    Mario Puzo           NXB VH             1969        mafia               
 
-10    1463       Nhap mon lap trinh        N.T.T.M. Khang       NXB DHQGHCM        2022        giao duc            
+10    5467       Cuoc phieu luu cua Huck   Mark Twain           NXB VHNN           1885        phieu luu           
 
-11    3660       Cay cam ngot cua toi      J. Vasconcelos       NXB HNV            2020        tu truyen           
+11    2957       Tinh yeu thoi tho ta      G.G. Marquez         NXB VHNN           1985        tinh cam            
 
-12    2842       Logic Hoc                 D.N.T. Nghia         NXB HUIT           2017        giao duc            
+12    3660       Cay cam ngot cua toi      J. Vasconcelos       NXB HNV            2020        tu truyen           
 
 13    7539       Nhat ky Dang Thuy Tram    Dang Thuy Tram       NXB HNV            2022        tu truyen           
+
+14    8128       Truyen Kieu               Nguyen Du            NXB VHTT           1820        van hoc co dien     
+
+15    3565       Nineteen Eighty-Four      George Orwell        NXB VHNN           1949        vien tuong          

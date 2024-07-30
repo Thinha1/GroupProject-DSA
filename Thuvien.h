@@ -72,4 +72,5 @@ int countAuthors(DList dl, ItemType x);
 int xulyXoa(DList& dl, int del);
 int xulythem(DList& dl, int del);
 int insertAfter(DList& dl, DNode* p, DNode* q);
+int reverseDList(DList dl);
 #endif _Thuvien_h

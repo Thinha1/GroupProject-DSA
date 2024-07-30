@@ -108,11 +108,11 @@ int menu_02()
 	int* abc = new int;
 
 	const char* s[100] = { 
-	"1.NHAP THEM THONG TIN MOT QUYEN SACH DA SAP XEP(co danh sach)",
+	"1.NHAP THEM THONG TIN MOT QUYEN SACH DA SAP XEP.",
 	"2.TAO MOT DANH SACH SACH VOI FILE TEXT.",
 	"3.TAO MOT DANH SACH TU BAN PHIM.",
 	"4.THUC HIEN XOA DU LIEU.",
-	"5.DEM SO LUONG SACH CHUA CHUOI LAP TRINH.",
+	"5.DEM SO LUONG SACH CHUA CHUOI CAN TIM.",
 	"6.SAP XEP DANH SACH THEO CUNG THE LOAI.",
 	"7.TIM TAC GIA CO NHIEU SACH NHAT.",
 	"8.TIM NHA XUAT BAN CO IT SACH NHAT.",
@@ -120,21 +120,22 @@ int menu_02()
 	"10.DEM SO LUONG SACH THEO TUNG THE LOAI.",
 	"11.XEM NOI DUNG DANH SACH DANG CO.",
 	"12.THUC HIEN THEM DU LIEU O CAC VI TRI.",
+	"13.IN DAO NGUOC DANH SACH LIEN KET DOI.",
  };
 	
 	//-----------------Khu vuc chinh sua tuy chon-----------------//
-	int n = 12;	//So luong control
-	int max_show = 15;	//So luong control trong 1 trang
+	int n = 13;	//So luong control
+	int max_show = 13;	//So luong control trong 1 trang
 	int pick = 1;	//Bien chon : lua chon bat dau tai 1
 	int max_pick = max_show;	//So lua chon duoc hien thi tai trang hien hanh
 	int start;	//Bien bat dau
 	int page = 1;	//Trang : Bat dau o trang 1
 	int max_page = (n - 1) / max_show + 1;	//Gioi han so trang
-	int x = 20, y = 10;
+	int x = 22, y = 11;
 	//-----------------------------------------------------------//
 	/*table2("1x1.4x4.5.15", abc);*/
 	WindowsCustomize();
-	//Ruler();
+	/*Ruler();*/
 	BGcolor(15);
 	table("1x1.4x1.30.82#1x1.20x10.15.50", abc);
 	BGcolor(14);
@@ -757,18 +758,31 @@ void loading()
 	XY(1, 1);
 	system("color 0a");
 	cout << "<!>Open file sucessfully!";
+	BGcolor(14);
+	XY(1, 1);
+	system("color 0a");
+	cout << "<!>Open file sucessfully!";
 	XY(0, 3);
 	BGcolor(14);
 	cout << "  Redirect in 3 seconds";
 	Sleep(1000);
-	XY(23, 3);
-	cout << ".";
+	system("cls");
+	XY(1, 1);
+	system("color 0a");
+	cout << "<!>Open file sucessfully!";
+	XY(0, 3);
+	BGcolor(14);
+	cout << "  Redirect in 2 seconds";
 	Sleep(1000);
-	XY(25, 3);
-	cout << ".";
+	system("cls");
+	XY(1, 1);
+	system("color 0a");
+	cout << "<!>Open file sucessfully!";
+	XY(0, 3);
+	BGcolor(14);
+	cout << "  Redirect in 1 seconds";
 	Sleep(1000);
-	XY(27, 3);
-	cout << "." << endl;
+	system("cls");
 }
 //int menu()
 //{
