@@ -2,40 +2,40 @@
 #include "Thuvien.h"
 #include "MyLib.h"
 using namespace std;
-void showMenu() 
-{
-	printf("\n********************************************************************");
-	printf("\n*          LIBRARY MANAGEMENT PROGRAM                              *");
-	printf("\n********************************************************************");
-	printf("\n* 1.NHAP THEM THONG TIN MOT QUYEN SACH DA SAP XEP(co danh sach)    *");
-	printf("\n*                                                                  *");
-	printf("\n* 2.TAO MOT DANH SACH SACH VOI FILE TEXT.                          *");
-	printf("\n*                                                                  *");
-	printf("\n* 3.TAO MOT DANH SACH TU BAN PHIM.                                 *");
-	printf("\n*                                                                  *");
-	printf("\n* 4.THUC HIEN XOA DU LIEU.                                         *");
-	printf("\n*                                                                  *");
-	printf("\n* 5.DEM SO LUONG SACH CHUA CHUOI LAP TRINH.                        *");
-	printf("\n*                                                                  *");
-	printf("\n* 6.SAP XEP DANH SACH THEO CUNG THE LOAI.                          *");
-	printf("\n*                                                                  *");
-	printf("\n* 7.TIM TAC GIA CO NHIEU SACH NHAT.                                *");
-	printf("\n*                                                                  *");
-	printf("\n* 8.TIM NHA XUAT BAN CO IT SACH NHAT.                              *");
-	printf("\n*                                                                  *");
-	printf("\n* 9.THONG KE SACH THEO TUNG NAM XUAT BAN.                          *");
-	printf("\n*                                                                  *");
-	printf("\n* 10.DEM SO LUONG SACH THEO TUNG THE LOAI.                         *");
-	printf("\n*                                                                  *");
-	printf("\n* 11.XEM NOI DUNG DANH SACH DANG CO.                               *");
-	printf("\n*                                                                  *");
-	printf("\n* 12.THUC HIEN THEM DU LIEU O CAC VI TRI.                          *");
-	printf("\n*                                                                  *");
-	printf("\n* 0. Thoat chuong trinh                                            *");
-	printf("\n*                                                                  *");
-	printf("\n********************************************************************");
-	printf("\nVui long chon chuc nang: ");
-}
+//void showMenu() 
+//{
+//	printf("\n********************************************************************");
+//	printf("\n*          LIBRARY MANAGEMENT PROGRAM                              *");
+//	printf("\n********************************************************************");
+//	printf("\n* 1.NHAP THEM THONG TIN MOT QUYEN SACH DA SAP XEP(co danh sach)    *");
+//	printf("\n*                                                                  *");
+//	printf("\n* 2.TAO MOT DANH SACH SACH VOI FILE TEXT.                          *");
+//	printf("\n*                                                                  *");
+//	printf("\n* 3.TAO MOT DANH SACH TU BAN PHIM.                                 *");
+//	printf("\n*                                                                  *");
+//	printf("\n* 4.THUC HIEN XOA DU LIEU.                                         *");
+//	printf("\n*                                                                  *");
+//	printf("\n* 5.DEM SO LUONG SACH CHUA CHUOI LAP TRINH.                        *");
+//	printf("\n*                                                                  *");
+//	printf("\n* 6.SAP XEP DANH SACH THEO CUNG THE LOAI.                          *");
+//	printf("\n*                                                                  *");
+//	printf("\n* 7.TIM TAC GIA CO NHIEU SACH NHAT.                                *");
+//	printf("\n*                                                                  *");
+//	printf("\n* 8.TIM NHA XUAT BAN CO IT SACH NHAT.                              *");
+//	printf("\n*                                                                  *");
+//	printf("\n* 9.THONG KE SACH THEO TUNG NAM XUAT BAN.                          *");
+//	printf("\n*                                                                  *");
+//	printf("\n* 10.DEM SO LUONG SACH THEO TUNG THE LOAI.                         *");
+//	printf("\n*                                                                  *");
+//	printf("\n* 11.XEM NOI DUNG DANH SACH DANG CO.                               *");
+//	printf("\n*                                                                  *");
+//	printf("\n* 12.THUC HIEN THEM DU LIEU O CAC VI TRI.                          *");
+//	printf("\n*                                                                  *");
+//	printf("\n* 0. Thoat chuong trinh                                            *");
+//	printf("\n*                                                                  *");
+//	printf("\n********************************************************************");
+//	printf("\nVui long chon chuc nang: ");
+//}
 //**************************************************************************
 void process() 
 {
@@ -47,7 +47,7 @@ void process()
 	DNode* p;
 	thuvien tv;
 	int choicesave;
-	char str[30] = "lap trinh";
+	char str[30];
 	int lc;
 	int del, add;
 
@@ -144,6 +144,9 @@ void process()
 			}
 			break;
 		case 5:
+			printf("Nhap vao chuoi can tim: ");
+			fflush(stdin);
+			fgets(str, 30, stdin);
 			countString(dl, str);
 			printf("\n");
 			system("pause");
@@ -209,6 +212,11 @@ void process()
 						printf("Chi nhap 1 hoac 2\nVui long nhap lai!\n");
 				} while (choicesave < 1 || choicesave > 2);
 			}
+			break;
+		case 13:
+			printf("Danh sach sau khi in dao nguoc la :");
+			reverseDList(dl);
+			system("pause");
 			break;
 		}
 	} while (lc != 0);

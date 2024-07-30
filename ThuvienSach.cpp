@@ -168,7 +168,7 @@ int checkIDDuplicate(DList dl, char masach[])
 //nhap thong tin  quyen sach
 void nhapTTSach(thuvien& tv)
 {
-	getchar();
+	fflush(stdin);
 	printf("Nhap ma sach: ");
 	fgets(tv.masach, 50, stdin);
 	tv.masach[strcspn(tv.masach, "\n")] = '\0';  // Loại bỏ ký tự xuống dòng
@@ -328,7 +328,11 @@ DNode* findDNodehavebookname(DList dl, char str[])
 //dem so sach co ten lap trinh
 void countString(DList dl, char str[])
 {
-	printf("Co tong %d lan xuat hien chuoi 'lap trinh' trong danh sach", findDNode(dl, str));
+	char tmp[30];
+	strcpy(tmp, str);
+	toLowerString(tmp);
+	xoaKhoangTrangThua(tmp);
+	printf("Co tong %d lan xuat hien chuoi '%s' trong danh sach", findDNode(dl, tmp), str);
 }
 //===================================================================================================
 //xoa node cuoi
@@ -546,6 +550,7 @@ int xulythem(DList& dl, int add)
 			{
 				printf("Trung ma sach!");
 				getchar();
+				system("pause");
 				return 0;
 			}
 			insertAfter(dl, p, q);
@@ -554,6 +559,7 @@ int xulythem(DList& dl, int add)
 		}
 		else {
 			printf("Khong tim thay quyen sach.\n");
+			system("pause");
 			return 0;
 		}
 		return 1;
@@ -566,6 +572,7 @@ int xulythem(DList& dl, int add)
 		{
 			printf("Trung ma sach!");
 			getchar();
+			system("pause");
 			return 0;
 		}
 		p = createDNode(x);
@@ -771,7 +778,7 @@ void destroyDList(DList dl) {
 	while (p != NULL) {
 		DNode* temp = p;
 		p = p->next;
-		free(temp);
+		delete temp;
 	}
 
 	dl.Head = NULL;
@@ -881,4 +888,24 @@ void writeListToFile(DList& dl, char file_out[]) {
 		p = p->next;
 	}
 	fclose(fo);
+}
+//===================================================================================
+// dao nguoc danh sach lien ket doi
+int reverseDList(DList dl) {
+	DNode* p = dl.Tail;
+	if (p == NULL) {
+		printf("Danh sach rong\n");
+		return 0;
+	}
+	else
+		printf("%-4s | %-12s | %-23s | %-18s | %-14s | %-4s | %-15s\n", "STT", "MA SACH", "TEN SACH", "TAC GIA", "NHA XUAT BAN", "NAM XUAT BAN", "THE LOAI");
+	int stt = 01;
+	while (p != NULL)
+	{
+		toLowerString(p->info.theloai);
+		printf("%02d", stt++);
+		showDNode(p);
+		p = p->prev;
+	}
+	return 1;
 }
